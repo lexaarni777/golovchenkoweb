@@ -1,0 +1,70 @@
+$width: 768px;
+.Qualification{
+    width: $width;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    .Heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+        color: black;
+        .HeadingTop{
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 36px;
+            margin: 0px;
+        }
+        .HeadingBot{
+            font-size: 14px;
+            margin: 0px;
+            color: #43434d;
+        }
+    }
+    .QualificationBox{
+        display: flex;
+        justify-content: center;
+        
+            .QualificationText{
+                width: $width/2-180;
+                .QualificationTextTitle{
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    margin: 0;
+                    color: black;
+                }
+                .QualificationTextDesc{                    
+                    font-size: 16px;
+                    line-height: 18px;
+                    margin: 0;
+                    font-weight: 300;
+                }
+            }
+            .QualificationCenter{
+                width: 15px;
+                margin: 0 40px;
+                .Circle{
+                    background-color: #FF6F61;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                }
+                .Line{
+                    background-color: #FF6F61;
+                    width: 1px;
+                    height: 100%;
+                    margin: 0 auto;
+                }
+            }
+            .QualificationNone{
+                width: $width/2-180;
+
+            }
+    }
+
+}
+
+

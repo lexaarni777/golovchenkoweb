@@ -1,0 +1,64 @@
+$width: 768px;
+.About{
+    width: $width;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    .Heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+        color: black;
+        .HeadingTop{
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 36px;
+            margin: 0px;
+        }
+        .HeadingBot{
+            font-size: 14px;
+            margin: 0px;
+            color: #43434d;
+        }
+    }
+    .Description {
+        width: $width;
+        display: flex;
+        justify-content: space-between;
+        .DescriptionLeft, .DescriptionRight{
+            width: $width/2;
+        }
+        .DescriptionLeft{
+            img{
+                border-radius: 15px;
+            }
+        }
+        .DescriptionRight{
+            align-content: center;
+            text-align: justify;
+            table{
+                font-size: 20px;
+                margin: 0 auto;
+                th{
+                    text-align: center;
+                    font-weight: 600;
+                }
+                .TableText{
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-align: center;
+                    line-height: 15px;
+                        td{
+                            padding: 0 7px;
+                        }
+                }
+            }
+        }
+        
+    }
+
+}
+
+

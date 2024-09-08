@@ -1,0 +1,26 @@
+.Navigation{
+    text-align: right;
+    
+}
+
+.Navigation ul{
+    list-style: none;
+    display: flex;
+
+
+}
+.Navigation ul li{
+    margin-left: 30px;
+    font-weight: 500;
+    transition: font-weight 0.3s ease; /* Плавный переход для изменения веса шрифта */
+    cursor: pointer;
+
+}
+.Navigation ul li:hover {
+    
+    font-weight: 600; /* Жирный шрифт для выделенного пункта */
+}
+.Navigation ul li.active {
+    color: #FF6F61; /* Цвет выделенного пункта меню */
+    font-weight: 600;; /* Жирный шрифт для выделенного пункта */
+}

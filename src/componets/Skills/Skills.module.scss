@@ -1,0 +1,91 @@
+$width: 768px;
+.Skills{
+    width: $width;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    .Heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+        color: black;
+        .HeadingTop{
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 36px;
+            margin: 0px;
+        }
+        .HeadingBot{
+            font-size: 14px;
+            margin: 0px;
+            color: #43434d;
+        }
+    }
+    .SkillsListBox{
+        display: flex;
+        flex-direction: column;
+            .SkillsListBoxText{
+                padding-left: 50px;
+                display: flex;
+                flex-direction: column;
+                    .BoxTextTitle{
+                        font-size: 16px;
+                        display: flex;
+                        justify-content: space-between;
+                        font-weight: 600;
+                        height: 30px;
+                            p{
+                                align-content: center;
+                                margin: 0;  
+                            }
+                        
+                            span{
+                                font-weight: 300;
+                                align-content: center;  
+                            }
+                    }
+                    .SkillsBar{
+                    height: 5px;
+                    background-color: #43434d;
+                    margin-bottom: 20px;
+                        .SkillsBarPr{
+                            height: 5px;
+                            background-color: #FF6F61;
+                        }   
+                    }
+            }
+    } 
+    .SkillsBox {
+        width: $width;
+        display: flex;
+        justify-content: space-between;
+        
+        .SkillsBoxLeft, .SkillsBoxRight{
+            width: $width/2;
+        }
+            
+        .SkillsBoxTitle{
+            display: flex;
+            .SkillsBoxTitleLeft{
+                margin-right: 15px;
+            }
+            .SkillsBoxTittleRight{
+                cursor: pointer;
+            }
+
+        }
+    }    
+}
+.isDisplayLeft{
+    display: none;
+    position: absolute;
+}
+.isDisplayRight{
+    display: none;
+    position: absolute;
+}
+
+

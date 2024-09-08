@@ -1,0 +1,22 @@
+.rotated {
+    transform: rotate(180deg); /* Поворачиваем иконку на 180 градусов */
+    transition: transform 0.3s ease; /* Плавный переход для поворота */
+}
+
+/* Убедитесь, что у вас есть стиль для обычного состояния */
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.MdKeyboardArrowDown {
+    transition: transform 0.3s ease; /* Плавный переход для обычного состояния */
+    animation: bounce 1.5s infinite;
+    
+}

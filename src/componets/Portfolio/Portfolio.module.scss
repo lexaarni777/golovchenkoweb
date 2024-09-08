@@ -1,0 +1,132 @@
+$width: 768px;
+
+.Portfolio {
+    width: $width;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 200px;
+
+    .Heading {
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+        color: black;
+
+        .HeadingTop {
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 36px;
+            margin: 0px;
+        }
+
+        .HeadingBot {
+            font-size: 14px;
+            margin: 0px;
+            color: #43434d;
+        }
+    }
+    .GalleryBox{
+
+        .GalleryContent {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+
+            .navButton {
+                width: 50px;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                font-size: 40px;
+                transition: font-size 0.3s ease;
+
+                &:hover {
+                    font-size: 45px;
+                }
+            }
+
+            .projectInfo {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .projectContent {
+                    display: flex;
+                    transition: transform 0.5s ease; /* Плавное перелистывание */
+
+                    .projectImage {
+                        flex: 1;
+                        margin-right: 20px;
+                        align-content: center;
+
+                        img {
+                            max-width: 100%;
+                            border-radius: 8px;
+                        }
+                    }
+
+                    .projectDescription {
+                        flex: 1;
+                        align-content: center;
+                        margin: 0 auto;
+                        height: 290px;
+                        .title{
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: black;
+                            margin-top: 0;
+                        }
+                        .onDetailed{
+                            display: block;
+                            margin: 0 auto;
+                            width: 80px;
+                            height: 40px;
+                            background-color: #FF6F61;
+                            border: 0px;
+                            border-radius: 5px;
+                            color:white;
+                            font-weight: 600;
+                            align-content: center;
+                            cursor: pointer;
+                            &:hover {
+                                background-color: #43434d;
+                            }
+                            &:active {
+                                background-color: #FF6F61;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+            .dot {
+                height: 10px;
+                width: 10px;
+                margin: 0 5px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.3s ease;
+
+                &.active {
+                    background-color: #FF6F61; /* Цвет активной точки */
+                }
+            }
+        }
+    }
+}
