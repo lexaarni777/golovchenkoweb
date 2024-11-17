@@ -77,11 +77,13 @@ $width: 768px;
         }
         .QualificationBox{
             width: 100%;
+            min-width: 306px;
             .QualificationText{
                 position: relative;
+                margin-left: 120px;
                 .QualificationTextDate{
                     position: absolute;
-                    left: -120px;
+                    left: -110px;
                     top: 5px;
                 }
                 .QualificationTextTitle{
