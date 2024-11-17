@@ -6,7 +6,7 @@
 .Navigation ul{
     list-style: none;
     display: flex;
-
+    padding-left: 0;
 
 }
 .Navigation ul li{
@@ -14,6 +14,7 @@
     font-weight: 500;
     transition: font-weight 0.3s ease; /* Плавный переход для изменения веса шрифта */
     cursor: pointer;
+    white-space: nowrap;
 
 }
 .Navigation ul li:hover {
@@ -23,4 +24,23 @@
 .Navigation ul li.active {
     color: #FF6F61; /* Цвет выделенного пункта меню */
     font-weight: 600;; /* Жирный шрифт для выделенного пункта */
+}
+
+@media (max-width: 710px) {
+    .Navigation ul li{
+        margin-left: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .Navigation{
+        text-align: left;
+        padding-left: 15px;
+
+        ul{
+            flex-direction: column;
+                li{
+                    margin: 10px 0;
+                }
+        }
+    }
 }

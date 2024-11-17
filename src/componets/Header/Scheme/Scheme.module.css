@@ -1,3 +1,17 @@
 .Scheme{
     margin-left: 30px;
 }
+
+@media (max-width: 580px) {
+    .Scheme{
+        margin-left: 0;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .Scheme{
+        top: 8px;
+}
+}

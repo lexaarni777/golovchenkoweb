@@ -67,4 +67,30 @@ $width: 768px;
 
 }
 
-
+@media (max-width: 768px){
+    .Qualification{
+        width: 100%;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        .QualificationNone, .QualificationCenter{
+            display: none;
+        }
+        .QualificationBox{
+            width: 100%;
+            .QualificationText{
+                position: relative;
+                .QualificationTextDate{
+                    position: absolute;
+                    left: -120px;
+                    top: 5px;
+                }
+                .QualificationTextTitle{
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+    
+    
+    
+}

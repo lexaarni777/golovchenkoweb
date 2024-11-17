@@ -147,9 +147,9 @@ const Portfolio = () => {
 
             <div className={classes.GalleryBox}>
                 <div className={classes.GalleryContent}>
-                    <div>
+                   
                         <IoIosArrowBack className={classes.navButton} onClick={prevProject} color='#FF6F61' />
-                    </div>
+                   
 
                     <div className={classes.projectInfo}>
                         <div className={classes.projectContent}>
@@ -163,12 +163,12 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                   
                         <IoIosArrowForward className={classes.navButton} onClick={nextProject} color='#FF6F61' />
-                    </div>
+                   
                 </div>
 
-                <div className={classes.pagination}>
+                <div className={classes.Pagination}>
                     {projects.map((_, index) => (
                         <span key={index} className={`${classes.dot} ${index === currentProjectIndex ? classes.active : ''}`}></span>
                     ))}

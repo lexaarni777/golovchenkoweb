@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'; // Импортируем React и хуки useEffect и useState
-import classes from './Navigation.module.css'; // Импортируем стили из CSS
+import classes from './Navigation.module.scss'; // Импортируем стили из CSS
 
 const Navigation = () => {
     // Состояние для хранения текущего активного пункта меню

@@ -1,27 +1,23 @@
 $width: 768px;
 .Home{
-    width: $width;
-    margin-bottom: 200px;
-    margin-top: 100px;
-
-
+    max-width: $width;
     margin: 0 auto;
     .Container{
+            width: 100%;
             display: flex;
             justify-content: space-between;
             margin-bottom: 200px;
             margin-top: 100px;
+            position: relative;
         .Social{
             display: flex;
             flex-direction: column;
             width: 50px;
-            align-content: center;
             justify-content: center;
             align-items: center;
-            transform: translateX(-89px);
             position: absolute;
-            margin-bottom: 200px;
-            margin-top: 100px;
+            left: -90px;
+            top: 20px;
             .SocialImg, .LeetCode img {
                 width: 30px;
                 margin: 15px;
@@ -34,7 +30,9 @@ $width: 768px;
         .Description {
             margin: 0 auto;
             align-content: center;
-            width: $width/2;
+            max-width: $width/2;
+            padding-left: 10px;
+            padding-right: 30px;
             .HeadingTop{
                 font-size: 48px;
                 font-weight: 600;
@@ -48,11 +46,13 @@ $width: 768px;
             }
             .DescriptionText{    
                 margin-bottom: 10px;
+                text-align: justify;
             }
         }
         .ImageMy{
-            width: $width/2;
+            max-width: $width/2;
             margin: 0 auto;
+            padding-right: 10px;
             text-align: center;
             align-content: center;
                 img{
@@ -62,4 +62,28 @@ $width: 768px;
     }
 }
 
+@media (max-width: 768px){
+    .Home{
+        margin-bottom: 30px;
+        margin-top: 20px;
+        .Container{
+            flex-direction: column;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            justify-content: flex-start;
+            .Description .HeadingTop{
+                font-size: 38px;
+                font-weight: 500;
+                text-align: center;
+            }
+            .HeadingBott{
+                text-align: center;
+            }
+        }
+    }
 
+}
+
+@media (max-width: 480px){
+    
+}

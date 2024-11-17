@@ -1,0 +1,23 @@
+.Nik p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+@media (max-width: 1024px) 
+{
+    .Nik{
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Nik p{
+        margin: 10px 0;
+        .NikBr{
+            display: none;
+        }
+    }
+    
+}
+

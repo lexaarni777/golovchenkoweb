@@ -1,0 +1,70 @@
+.Header {
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.HeaderWidth {
+    width: 1024px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.RightContainer {
+    max-width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+}
+.MiniMenu{
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    cursor: pointer;
+}
+
+/* Для маленьких экранов - смартфонов */
+
+@media (max-width: 580px) {
+    .HeaderWidth{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .RightContainer{
+            justify-content: center;
+        }
+
+    }
+}
+@media (max-width: 480px) 
+{
+    .HeaderWidth{
+        max-width: 480px;
+
+    }
+    .MiniMenu{
+        display: block;
+    }
+    .RightContainer{
+        display: none;
+        background-color: white;
+        width: 320px;
+
+    }
+    .RightContainer.activeMiniMenu{
+        justify-content: left;
+        top: 40px;
+        left: 0;
+        display: flex;
+        position: absolute;
+        transition: all 0.3s ease;
+
+        
+    }
+}

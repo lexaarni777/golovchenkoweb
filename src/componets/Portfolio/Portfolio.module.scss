@@ -8,8 +8,8 @@ $width: 768px;
     margin-bottom: 200px;
 
     .Heading {
+        width: 100%;
         display: flex;
-
         flex-direction: column;
         align-items: center;
         margin-bottom: 25px;
@@ -29,15 +29,14 @@ $width: 768px;
         }
     }
     .GalleryBox{
-
+        width: 100%;
         .GalleryContent {
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: 100%;
-            max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 20px 0;
             position: relative;
 
             .navButton {
@@ -109,7 +108,7 @@ $width: 768px;
                 }
             }
         }
-        .pagination {
+        .Pagination {
             display: flex;
             justify-content: center;
             margin-top: 20px;
@@ -125,6 +124,38 @@ $width: 768px;
 
                 &.active {
                     background-color: #FF6F61; /* Цвет активной точки */
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) 
+{
+    
+    .Portfolio{
+        max-width: 100%;
+        margin-bottom: 30px;
+        .GalleryBox{
+            max-width: 100%;
+            position: relative;
+
+            .GalleryContent{
+                justify-content: center;
+                .navButton{
+                    padding: 10px 5px;
+                }
+                .projectInfo{
+                    max-width: 403px; 
+                }
+                .projectContent{
+                    width: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .projectImage{
+                        margin-right: 0 !important;
+                    }
                 }
             }
         }

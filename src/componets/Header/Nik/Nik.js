@@ -1,10 +1,10 @@
 import Reaсt from 'react'
-import classes from './Nik.module.css'
+import classes from './Nik.module.scss'
 
 const Nik = () =>{
     return(
         <div className={classes.Nik}>
-           <p>Golovchenko<br/>Web</p>
+           <p>Golovchenko <br className={classes.NikBr}/>Web</p>
         </div>
     )
 }

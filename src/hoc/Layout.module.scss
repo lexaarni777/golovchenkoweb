@@ -3,6 +3,17 @@
     font-family: 'Poppins', sans-serif;
     color: #43434d;
     font-size: 14px;
-    padding-top: 60px;
-   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Для маленьких экранов - смартфонов */
+@media (max-width: 480px) {
+    .Layout{
+        max-width: 480px;
+        min-width: 480px;
+    }
 }
