@@ -99,7 +99,7 @@ const projects = [
         title: 'Single-page application интернет-магазин',
         titleDescription: 'Интернет-магазин с правами администратора для добавления и редактирования товаров, регистрацией новых пользователей, корзиной и оформлением заказов (не реализована только оплата).',
         description: texthoney(),
-        githubLink: 'hhttps://github.com/lexaarni777/honey-react-redux' , // Добавьте ссылку на GitHub
+        githubLink: 'https://github.com/lexaarni777/honey-react-redux' , // Добавьте ссылку на GitHub
         imageGalery: [HRA1,HRA2,HRA3,HRA4,HRA5,HRA6,HRA7]
     },
     {
